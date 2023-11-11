@@ -23,65 +23,67 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            require-prior-idle-ms = <100>;
         };
 	combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
+            require-prior-idle-ms = <100>;
         };
 	combo_back {
             timeout-ms = <50>;
             key-positions = <19 18>;
             bindings = <&kp BSPC>;
+            require-prior-idle-ms = <100>;
         };
 	combo_del {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp BSPC>;
+            require-prior-idle-ms = <100>;
         };
 	combo_1L {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <10 30>;
             bindings = <&mo 1>;
+	    slow-release=true;
         };
 	combo_2L {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <11 30>;
             bindings = <&mo 2>;
+	    slow-release=true;
         };
 	combo_3L {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <12 30>;
             bindings = <&mo 3>;
+	    slow-release=true;
         };
 	combo_1R {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <19 33>;
             bindings = <&mo 1>;
+	    slow-release=true;
         };
 	combo_2R {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <18 33>;
             bindings = <&mo 2>;
+	    slow-release=true;
         };
 	combo_3R {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <17 33>;
             bindings = <&mo 3>;
+	    slow-release=true;
         };
     };
 
@@ -99,7 +101,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp LCTRL  &kp SPACE     &kp ENTER  &kp RSHFT
+                                             &kp ESC    &kp SPACE     &kp SPACE  &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -111,7 +113,7 @@
             &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7    &kp N8      &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │ ^        │ &        │ *        │ (        │  )       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS  &kp ASTRK   &kp LPAR   &kp RPAR
+	      HRML(EXCL,   AT,    HASH,      DLLR)     &kp PRCNT      &kp CARET  HRMR(AMPS,  ASTRK,    LPAR,      RPAR)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ -        │  _       │  +       │  =       │  |       │   │  {       │  }       │ [        │ ]        | 
            &kp MINUS  &kp UNDER   &kp PLUS   &kp EQUAL  &kp PIPE       &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH
