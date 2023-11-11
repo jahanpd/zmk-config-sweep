@@ -53,37 +53,37 @@
             timeout-ms = <100>;
             key-positions = <10 30>;
             bindings = <&mo 1>;
-	    slow-release=true;
+	    slow-release = true;
         };
 	combo_2L {
             timeout-ms = <100>;
             key-positions = <11 30>;
             bindings = <&mo 2>;
-	    slow-release=true;
+	    slow-release = true;
         };
 	combo_3L {
             timeout-ms = <100>;
             key-positions = <12 30>;
             bindings = <&mo 3>;
-	    slow-release=true;
+	    slow-release = true;
         };
 	combo_1R {
             timeout-ms = <100>;
             key-positions = <19 33>;
             bindings = <&mo 1>;
-	    slow-release=true;
+	    slow-release = true;
         };
 	combo_2R {
             timeout-ms = <100>;
             key-positions = <18 33>;
             bindings = <&mo 2>;
-	    slow-release=true;
+	    slow-release = true;
         };
 	combo_3R {
             timeout-ms = <100>;
             key-positions = <17 33>;
             bindings = <&mo 3>;
-	    slow-release=true;
+	    slow-release = true;
         };
     };
 
