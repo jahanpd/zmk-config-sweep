@@ -116,7 +116,7 @@
 	   HRML(MINUS,  UNDER,    PLUS,      EQUAL)     &kp PIPE      &kp LBRC  HRMR(RBRC,  LBKT,      RBKT,      SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  !       │  @       │          │   │          │  (       │ )        │          |  
-           &trans     &trans     &kp EXCL   &kp AT      &trans          &trans    &kp LPAR   &kp RPAR   &trans     &kp BSLH
+           &kp TILDE   &kp GRAVE  &kp EXCL   &kp AT      &trans          &trans    &kp LPAR   &kp RPAR   &trans     &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp LSHFT     &kp RSHFT     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -127,15 +127,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp INS    &trans      &trans    &trans     &trans         &kp HOME  &kp PG_DN  &kp PG_UP   &kp END   &kp K_APP
+            &kp INS    &kp N7      &kp N8    &kp N9     &trans         &kp HOME  &kp PG_DN  &kp PG_UP   &kp END   &kp K_APP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  L       │  DOWN    │  UP      │  R       │          │
-            &trans     &trans     &trans     &trans     &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
+            &trans     &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+            &trans     &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &kp N0         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
