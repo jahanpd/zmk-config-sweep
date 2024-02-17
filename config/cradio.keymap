@@ -25,6 +25,57 @@
 
     combos {
         compatible = "zmk,combos";
+	// combos defining home row mods
+	combo_fd_lgui {
+	    timeout-ms = <15>;
+	    key-positions = <13 12>;
+	    bindings = <&ht LGUI &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_jk_rgui {
+	    timeout-ms = <15>;
+	    key-positions = <16 17>;
+	    bindings = <&ht RGUI &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_fs_lctrl {
+	    timeout-ms = <15>;
+	    key-positions = <13 11>;
+	    bindings = <&ht LCTRL &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_jl_rctrl {
+	    timeout-ms = <15>;
+	    key-positions = <16 18>;
+	    bindings = <&ht RCTRL &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_fa_lopt {
+	    timeout-ms = <15>;
+	    key-positions = <13 10>;
+	    bindings = <&ht LALT &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_jsemi_ropt {
+	    timeout-ms = <15>;
+	    key-positions = <16 19>;
+	    bindings = <&ht RALT &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_ds_lshift {
+	    timeout-ms = <15>;
+	    key-positions = <12 11>;
+	    bindings = <&ht LSHFT &none>;
+	    require-prior-idle-ms = <100>;
+	}
+	combo_kl_rshift {
+	    timeout-ms = <15>;
+	    key-positions = <18 17>;
+	    bindings = <&ht RSHFT &none>;
+	    require-prior-idle-ms = <100>;
+	}
+
+
         combo_esc {
             timeout-ms = <15>;
             key-positions = <0 1>;
