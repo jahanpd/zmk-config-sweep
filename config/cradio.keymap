@@ -31,49 +31,49 @@
 	    key-positions = <13 12>;
 	    bindings = <&ht LGUI &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_jk_rgui {
 	    timeout-ms = <15>;
 	    key-positions = <16 17>;
 	    bindings = <&ht RGUI &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_fs_lctrl {
 	    timeout-ms = <15>;
 	    key-positions = <13 11>;
 	    bindings = <&ht LCTRL &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_jl_rctrl {
 	    timeout-ms = <15>;
 	    key-positions = <16 18>;
 	    bindings = <&ht RCTRL &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_fa_lopt {
 	    timeout-ms = <15>;
 	    key-positions = <13 10>;
 	    bindings = <&ht LALT &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_jsemi_ropt {
 	    timeout-ms = <15>;
 	    key-positions = <16 19>;
 	    bindings = <&ht RALT &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_ds_lshift {
 	    timeout-ms = <15>;
 	    key-positions = <12 11>;
 	    bindings = <&ht LSHFT &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 	combo_kl_rshift {
 	    timeout-ms = <15>;
 	    key-positions = <18 17>;
 	    bindings = <&ht RSHFT &none>;
 	    require-prior-idle-ms = <100>;
-	}
+	};
 
 
         combo_esc {
@@ -159,7 +159,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
+            &kp A     &kp S      &kp D       &kp F      &kp G          &kp H      &kp J       &kp K     &kp   L   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
@@ -176,7 +176,7 @@
 	     &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7    &kp N8      &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ -        │  _       │  +       │  =       │  |       │   │  {       │  }       │ [        │ ]        | ' "
-	   HRML(MINUS,  UNDER,    PLUS,      EQUAL)     &kp PIPE      &kp LBRC  HRMR(RBRC,  LBKT,      RBKT,      SQT)
+	    &kp MINUS  &kp UNDER   &kp PLUS  &kp EQUAL   &kp PIPE      &kp LBRC    &kp RBRC  &kp LBKT   &kpRBKT   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  !       │  @       │          │   │          │  (       │ )        │          |  
            &kp TILDE   &kp GRAVE  &kp EXCL   &kp AT      &trans          &trans    &kp LPAR   &kp RPAR   &trans     &kp BSLH
