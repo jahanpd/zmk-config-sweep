@@ -112,6 +112,44 @@
 	    require-prior-idle-ms = <100>;
 	};
 
+	combo_as_lctrllalt {
+	    timeout-ms = <15>;
+	    key-positions = <10 11>;
+	    bindings = <&ht LC(LALT) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_lsemi_rctrlralt {
+	    timeout-ms = <15>;
+	    key-positions = <18 19>;
+	    bindings = <&ht RC(RALT) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+
+	combo_asd_lctrllaltlshift {
+	    timeout-ms = <15>;
+	    key-positions = <10 11 12>;
+	    bindings = <&ht LS(LC(LALT)) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_lsemi_rctrlraltrshift {
+	    timeout-ms = <15>;
+	    key-positions = <17 18 19>;
+	    bindings = <&ht RS(RC(RALT)) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+
+	combo_asdg_lhyper {
+	    timeout-ms = <15>;
+	    key-positions = <10 11 12 13>;
+	    bindings = <&ht LG(LS(LC(LALT))) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_jklsemi_r {
+	    timeout-ms = <15>;
+	    key-positions = <16 17 18 19>;
+	    bindings = <&ht RG(RS(RC(RALT))) &none>;
+	    require-prior-idle-ms = <100>;
+	};
 
         combo_esc {
             timeout-ms = <15>;
