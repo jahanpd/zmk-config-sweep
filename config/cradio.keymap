@@ -39,125 +39,125 @@
 	combo_fd_lgui {
 	    timeout-ms = <15>;
 	    key-positions = <13 12>;
-	    bindings = <&ht LGUI &none>;
+	    bindings = <&kp LGUI>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_jk_rgui {
 	    timeout-ms = <15>;
 	    key-positions = <16 17>;
-	    bindings = <&ht RGUI &none>;
+	    bindings = <&kp RGUI>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_fs_lctrl {
 	    timeout-ms = <15>;
 	    key-positions = <13 11>;
-	    bindings = <&ht LCTRL &none>;
+	    bindings = <&kp LCTRL>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_jl_rctrl {
 	    timeout-ms = <15>;
 	    key-positions = <16 18>;
-	    bindings = <&ht RCTRL &none>;
+	    bindings = <&kp RCTRL>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_fa_lopt {
 	    timeout-ms = <15>;
 	    key-positions = <13 10>;
-	    bindings = <&ht LALT &none>;
+	    bindings = <&kp LALT>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_jsemi_ropt {
 	    timeout-ms = <15>;
 	    key-positions = <16 19>;
-	    bindings = <&ht RALT &none>;
+	    bindings = <&kp RALT>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_ds_lshift {
 	    timeout-ms = <15>;
 	    key-positions = <12 11>;
-	    bindings = <&ht LSHFT &none>;
+	    bindings = <&kp LSHFT>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_kl_rshift {
 	    timeout-ms = <15>;
 	    key-positions = <18 17>;
-	    bindings = <&ht RSHFT &none>;
+	    bindings = <&kp RSHFT>;
 	    require-prior-idle-ms = <100>;
 	};
 
 	combo_gd_shiftlgui {
 	    timeout-ms = <15>;
 	    key-positions = <14 12>;
-	    bindings = <&ht LS(LGUI) &none>;
+	    bindings = <&kp LS(LGUI)>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_hk_shiftrgui {
 	    timeout-ms = <15>;
 	    key-positions = <15 17>;
-	    bindings = <&ht RS(RGUI) &none>;
+	    bindings = <&kp RS(RGUI)>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_gs_shiftlctrl {
 	    timeout-ms = <15>;
 	    key-positions = <14 11>;
-	    bindings = <&ht LS(LCTRL) &none>;
+	    bindings = <&kp LS(LCTRL)>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_hl_shiftrctrl {
 	    timeout-ms = <15>;
 	    key-positions = <15 18>;
-	    bindings = <&ht RS(RCTRL) &none>;
+	    bindings = <&kp RS(RCTRL)>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_ga_shiftlopt {
 	    timeout-ms = <15>;
 	    key-positions = <14 10>;
-	    bindings = <&ht LS(LALT) &none>;
+	    bindings = <&kp LS(LALT)>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_hsemi_ropt {
 	    timeout-ms = <15>;
 	    key-positions = <15 19>;
-	    bindings = <&ht RS(RALT) &none>;
+	    bindings = <&kp RS(RALT)>;
 	    require-prior-idle-ms = <100>;
 	};
 
 	combo_as_lctrllalt {
 	    timeout-ms = <15>;
 	    key-positions = <10 11>;
-	    bindings = <&ht LC(LALT) &none>;
+	    bindings = <&kp LC(LALT)>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_lsemi_rctrlralt {
 	    timeout-ms = <15>;
 	    key-positions = <18 19>;
-	    bindings = <&ht RC(RALT) &none>;
+	    bindings = <&kp RC(RALT)>;
 	    require-prior-idle-ms = <100>;
 	};
 
 	combo_asd_lctrllaltlshift {
 	    timeout-ms = <15>;
 	    key-positions = <10 11 12>;
-	    bindings = <&ht LS(LC(LALT)) &none>;
+	    bindings = <&kp LS(LC(LALT))>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_lsemi_rctrlraltrshift {
 	    timeout-ms = <15>;
 	    key-positions = <17 18 19>;
-	    bindings = <&ht RS(RC(RALT)) &none>;
+	    bindings = <&kp RS(RC(RALT))>;
 	    require-prior-idle-ms = <100>;
 	};
 
 	combo_asdg_lhyper {
 	    timeout-ms = <15>;
 	    key-positions = <10 11 12 13>;
-	    bindings = <&ht LG(LS(LC(LALT))) &none>;
+	    bindings = <&kp LG(LS(LC(LALT)))>;
 	    require-prior-idle-ms = <100>;
 	};
-	combo_jklsemi_r {
+	combo_jklsemi_rhyper {
 	    timeout-ms = <15>;
 	    key-positions = <16 17 18 19>;
-	    bindings = <&ht RG(RS(RC(RALT))) &none>;
+	    bindings = <&kp RG(RS(RC(RALT)))>;
 	    require-prior-idle-ms = <100>;
 	};
 
@@ -179,48 +179,6 @@
             key-positions = <30 33>;
             bindings = <&mo 3>;
 	        slow-release;
-        };
-	combo_2L {
-            timeout-ms = <100>;
-            key-positions = <11 30>;
-            bindings = <&mo 2>;
-	    slow-release;
-        };
-	combo_3L {
-            timeout-ms = <100>;
-            key-positions = <12 30>;
-            bindings = <&mo 3>;
-	    slow-release;
-        };
-        combo_4L {
-            timeout-ms = <100>;
-            key-positions = <10 11 12 30>;
-            bindings = <&mo 4>;
-	    slow-release;
-        };
-	combo_1R {
-            timeout-ms = <100>;
-            key-positions = <19 32>;
-            bindings = <&mo 1>;
-	    slow-release;
-        };
-	combo_2R {
-            timeout-ms = <100>;
-            key-positions = <18 32>;
-            bindings = <&mo 2>;
-	    slow-release;
-        };
-	combo_3R {
-            timeout-ms = <100>;
-            key-positions = <17 32>;
-            bindings = <&mo 3>;
-	    slow-release;
-        };
-        combo_4R {
-            timeout-ms = <100>;
-            key-positions = <17 18 19 33>;
-            bindings = <&mo 4>;
-	    slow-release;
         };
     };
 
