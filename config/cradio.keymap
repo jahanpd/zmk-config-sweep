@@ -276,7 +276,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none       &none      &td K_COPY K_CUT &kp K_UNDO  &none  &none     &K_PASTE
+            &none      &none      &none      &none       &none      <&td K_COPY K_CUT> &kp K_UNDO  &none  &none     &K_PASTE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  L       │  DOWN    │  UP      │  R       │          │
             &none      &none      &none      &none      &none          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
