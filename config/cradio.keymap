@@ -75,6 +75,43 @@
 	    require-prior-idle-ms = <100>;
 	};
 
+	combo_gd_shiftlgui {
+	    timeout-ms = <15>;
+	    key-positions = <14 12>;
+	    bindings = <&ht LS(LGUI) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_hk_shiftrgui {
+	    timeout-ms = <15>;
+	    key-positions = <15 17>;
+	    bindings = <&ht RS(RGUI) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_gs_shiftlctrl {
+	    timeout-ms = <15>;
+	    key-positions = <14 11>;
+	    bindings = <&ht LS(LCTRL) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_hl_shiftrctrl {
+	    timeout-ms = <15>;
+	    key-positions = <15 18>;
+	    bindings = <&ht RS(RCTRL) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_ga_shiftlopt {
+	    timeout-ms = <15>;
+	    key-positions = <14 10>;
+	    bindings = <&ht LS(LALT) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+	combo_hsemi_ropt {
+	    timeout-ms = <15>;
+	    key-positions = <15 19>;
+	    bindings = <&ht RS(RALT) &none>;
+	    require-prior-idle-ms = <100>;
+	};
+
 
         combo_esc {
             timeout-ms = <15>;
