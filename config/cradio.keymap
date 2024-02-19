@@ -125,13 +125,13 @@
 	combo_as_lctrllalt {
 	    timeout-ms = <15>;
 	    key-positions = <10 11>;
-	    bindings = <&kp LC(LALT)>;
+	    bindings = <&mt LC(LALT) TAB>;
 	    require-prior-idle-ms = <100>;
 	};
 	combo_lsemi_rctrlralt {
 	    timeout-ms = <15>;
 	    key-positions = <18 19>;
-	    bindings = <&kp RC(RALT)>;
+	    bindings = <&mt RC(RALT) BSPC>;
 	    require-prior-idle-ms = <100>;
 	};
 
@@ -161,19 +161,12 @@
 	    require-prior-idle-ms = <100>;
 	};
 
-        combo_esc {
-            timeout-ms = <15>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-            require-prior-idle-ms = <100>;
-        };
-	combo_tab {
-            timeout-ms = <15>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-            require-prior-idle-ms = <100>;
-        };
-    
+    combo_esc {
+        timeout-ms = <15>;
+        key-positions = <0 1>;
+        bindings = <&kp ESC>;
+        require-prior-idle-ms = <100>;
+    };
 	combo_vim {
             timeout-ms = <300>;
             key-positions = <30 33>;
@@ -239,10 +232,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none       &none         &td        &kp K_UNDO   &none    &none     &kp K_PASTE
+            &kp ESC    &none      &none      &none       &none         &td        &kp K_UNDO   &none    &none     &kp K_PASTE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  L       │  DOWN    │  UP      │  R       │          │
-            &none      &none      &none      &none      &none          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
+            &kp TAB      &none      &none      &none      &none          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &none      &none      &none      &none       &none         &kp HOME  &kp PG_DN  &kp PG_UP   &kp END   &kp K_APP
